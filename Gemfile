@@ -34,6 +34,7 @@ end
 
 group :production do
  gem 'therubyracer'
+ gem 'pg'
 end
 
 # Use ActiveModel has_secure_password
@@ -54,3 +55,6 @@ gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git'
 gem 'daemon_controller'
 
 gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-1-stable'
+
+gem 'capistrano'
+gem 'rvm-capistrano'
