@@ -34,7 +34,7 @@ end
 
 group :production do
  gem 'therubyracer'
- gem 'pg'
+#  gem 'pg'
 end
 
 # Use ActiveModel has_secure_password

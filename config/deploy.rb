@@ -14,7 +14,7 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 set :rails_env, :stage
 set :rvm_ruby_string, '2.1.0'             # ruby version you are using...
 set :deploy_to, "/home/ubuntu/mundi/"
-set :use_sudo, false
+# set :use_sudo, false
 set :user, "ubuntu"
 set :keep_releases, 3
 set :rvm_type, :user
