@@ -35,6 +35,7 @@ end
 group :production do
  gem 'therubyracer'
  gem 'pg' # also manually install packages(ubuntu): postgresql, postgresql-server-dev-all
+ gem 'unicorn'
 end
 
 # Use ActiveModel has_secure_password
