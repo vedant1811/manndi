@@ -4,7 +4,9 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+# Using postgresql
+gem 'pg' # also manually install packages(ubuntu): postgresql, postgresql-server-dev-all
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -34,7 +36,6 @@ end
 
 group :production do
  gem 'therubyracer'
- gem 'pg' # also manually install packages(ubuntu): postgresql, postgresql-server-dev-all
  gem 'unicorn'
 end
 
