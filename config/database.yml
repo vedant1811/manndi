@@ -16,6 +16,6 @@ test:
 
 production:
   adapter: postgresql
-  database: ubuntu
-  username: ubuntu
-  password: hellonearth
+  database: projectname_production
+  username: username
+  password: password

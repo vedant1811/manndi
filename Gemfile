@@ -58,5 +58,7 @@ gem 'daemon_controller'
 
 # gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-1-stable'
 
-gem 'capistrano'
-gem 'rvm-capistrano'
+group :development do
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+end

@@ -4,9 +4,9 @@
 env = ENV["RAILS_ENV"] || "development"
 
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete documentation.
-worker_processes 4
+worker_processes 3
 
-# listen on both a Unix domain socket and a TCP port, 
+# listen on both a Unix domain socket and a TCP port,
 # we use a shorter backlog for quicker failover when busy
 listen "/tmp/manndi.socket", backlog: 64
 
@@ -62,4 +62,4 @@ after_fork do |server, worker|
   # between any number of forked children (assuming your kernel
   # correctly implements pread()/pwrite() system calls)
 end
- 
+
