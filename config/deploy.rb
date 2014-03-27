@@ -40,13 +40,13 @@ ssh_options[:keys] = ["/home/vedant/.ssh/vedanta-key-pair-singapore.pem"]
 # after "bundle:install", "symlink_database_yml"
 
 # if you want to clean up old releases on each deploy uncomment this:
-after "deploy:restart", "deploy:cleanup"
-
-before "deploy:assets:precompile","deploy:config_symlink"#,"deploy:system_symlink"
-
-after "deploy:update_code","deploy:migrate"
-
-after "deploy:update", "deploy:cleanup" #clean up temp files etc.
+# after "deploy:restart", "deploy:cleanup"
+#
+# before "deploy:assets:precompile","deploy:config_symlink"#,"deploy:system_symlink"
+#
+# after "deploy:update_code","deploy:migrate"
+#
+# after "deploy:update", "deploy:cleanup" #clean up temp files etc.
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
