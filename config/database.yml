@@ -16,8 +16,4 @@ test:
 
 production:
   adapter: postgresql
-  database: projectname_production
-  host: localhost
-  pool: 5
-  username: username
-  password: password
+  database: ubuntu
