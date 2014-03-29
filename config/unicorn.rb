@@ -22,10 +22,10 @@ pid "/tmp/unicorn.manndi.pid"
 if env == "production"
   # Help ensure your application will always spawn in the symlinked
   # "current" directory that Capistrano sets up.
-  working_directory "/home/ubuntu/manndi/current"
+  working_directory "/home/ubuntu/app/manndi/current"
 
   # feel free to point this anywhere accessible on the filesystem user 'ubuntu'
-  shared_path = "/home/ubuntu/manndi/shared"
+  shared_path = "/home/ubuntu/app/manndi/shared"
 
   stderr_path "#{shared_path}/log/unicorn.stderr.log"
   stdout_path "#{shared_path}/log/unicorn.stdout.log"
