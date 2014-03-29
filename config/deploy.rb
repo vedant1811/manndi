@@ -65,4 +65,7 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
+  before "deploy:setup", "deploy:check_revision"
+  before "deploy:cold", "deploy:check_revision"
+  # TODO combine above 3 lines
 end
