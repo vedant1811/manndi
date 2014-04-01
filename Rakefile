@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-KayVeeShopping::Application.load_tasks
+Manndi::Application.load_tasks
