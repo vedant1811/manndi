@@ -95,6 +95,7 @@ GEM
     coffee-script-source (1.7.0)
     colorize (0.6.0)
     daemon_controller (1.1.8)
+    daemons (1.1.9)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -108,10 +109,13 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.0.2)
     ffaker (1.23.0)
     gyoku (0.4.6)
       builder (>= 2.1.2)
+    haml (4.0.5)
+      tilt
     highline (1.6.20)
     hike (1.2.3)
     httparty (0.12.0)
@@ -137,6 +141,16 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mailcatcher (0.2.4)
+      eventmachine
+      haml
+      i18n
+      json
+      mail
+      sinatra
+      skinny (>= 0.1.2)
+      sqlite3-ruby
+      thin
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
@@ -172,6 +186,8 @@ GEM
     rabl (0.8.4)
       activesupport (>= 2.3.14)
     rack (1.5.2)
+    rack-protection (1.5.2)
+      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.2)
@@ -219,6 +235,13 @@ GEM
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    skinny (0.2.3)
+      eventmachine (~> 1.0.0)
+      thin (~> 1.5.0)
     spree (2.1.4)
       spree_api (= 2.1.4)
       spree_backend (= 2.1.4)
@@ -274,11 +297,18 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sqlite3 (1.3.9)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
     state_machine (1.2.0)
     stringex (1.5.1)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
@@ -318,6 +348,7 @@ DEPENDENCIES
   daemon_controller
   jbuilder (~> 1.2)
   jquery-rails
+  mailcatcher
   pg
   rails (= 4.0.2)
   rename

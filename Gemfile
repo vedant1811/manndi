@@ -62,4 +62,5 @@ group :development do
   gem 'capistrano'
   gem 'rvm-capistrano'
   gem 'rename'
+  gem 'mailcatcher'
 end
