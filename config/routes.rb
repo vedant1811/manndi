@@ -1,4 +1,4 @@
-Manndi::Application.routes.draw do
+  Manndi::Application.routes.draw do
 
   devise_for :manndi_users
   # This line mounts Spree's routes at the root of your application.
@@ -61,4 +61,9 @@ Manndi::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  devise_scope :person do
+    get '/login', :to => "devise/sessions#new"
+    get '/signup', :to => "devise/registrations#new"
+    delete '/logout', :to => "devise/sessions#destroy"
+  end
 end
