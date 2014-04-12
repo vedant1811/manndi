@@ -13,4 +13,8 @@ Spree.config do |config|
   config.set(:allow_ssl_in_production => false)
 end
 # Spree::Config.set(:allow_ssl_in_development_and_test => false)
-Spree.user_class = "Spree::User"
+Spree.user_class = "Manndi_user"
+
+          Rails.application.config.to_prepare do
+            require_dependency 'spree/authentication_helpers'
+          end
