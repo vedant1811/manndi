@@ -51,9 +51,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree', '2.1.4'
-gem 'spree_gateway', :git => 'http://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
-gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
+gem 'spree_gateway', :git => 'http://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
+gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'daemon_controller'
 
 # gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-1-stable'
