@@ -6,7 +6,7 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
-server "54.254.208.254", :app, :web, :db, :primary => true #ip of the server
+server "54.255.153.68", :app, :web, :db, :primary => true #ip of the server
 # set :stages, %w{testing production}
 # set :default_stage, "production"
 set :application, "manndi"

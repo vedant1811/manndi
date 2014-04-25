@@ -63,4 +63,5 @@ group :development do
   gem 'rvm-capistrano'
   gem 'rename'
   gem 'mailcatcher'
+  gem 'xray-rails'
 end
