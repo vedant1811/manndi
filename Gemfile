@@ -53,7 +53,7 @@ end
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_gateway', :git => 'http://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
-gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+gem 'spree_auth_devise', :path => '~/rails/manndi_auth_spree'
 gem 'daemon_controller'
 
 # gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-1-stable'

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 1cf4f92f68dd6f2848f24313a4d81f3a031497bd
+  revision: 24883b8409a668fca0dc8c11cad17de11cde511a
   branch: 2-2-stable
   specs:
     spree (2.2.2.beta)
@@ -53,9 +53,15 @@ GIT
       spree_core (= 2.2.2.beta)
 
 GIT
-  remote: http://github.com/spree/spree_auth_devise.git
-  revision: e75c1f021c4353b2e10474dfb9181dc8d4571b40
+  remote: http://github.com/spree/spree_gateway.git
+  revision: 10430c4e9742f93fc7441903391f0cde3fb71976
   branch: 2-2-stable
+  specs:
+    spree_gateway (2.2.1)
+      spree_core (~> 2.2.0)
+
+PATH
+  remote: ~/rails/manndi_auth_spree
   specs:
     spree_auth_devise (2.2.0)
       cancan (~> 1.6.10)
@@ -63,15 +69,7 @@ GIT
       devise-encryptable (= 0.1.2)
       json
       multi_json
-      spree_core (~> 2.2.0)
-
-GIT
-  remote: http://github.com/spree/spree_gateway.git
-  revision: 10430c4e9742f93fc7441903391f0cde3fb71976
-  branch: 2-2-stable
-  specs:
-    spree_gateway (2.2.1)
-      spree_core (~> 2.2.0)
+      spree_core (~> 2.2)
 
 GEM
   remote: http://rubygems.org/
@@ -327,9 +325,6 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (2.5.1)
-      httpi (~> 1.0)
-      nokogiri (>= 1.4.0)
     xray-rails (0.1.14)
       coffee-rails
       rails (>= 3.1.0)
