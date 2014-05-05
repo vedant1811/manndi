@@ -32,6 +32,11 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 ssh_options[:keys] = ["/home/vedant/.ssh/vedanta-key-pair-singapore.pem"]
 
+set :rvm_ruby_string, :local        # use the same ruby as used locally for deployment
+
+before 'deploy', 'rvm:install_rvm'  # install/update RVM
+before 'deploy', 'rvm:install_ruby' # install Ruby and create gemset (both if missing)
+
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 namespace :deploy do
