@@ -37,6 +37,10 @@ set :rvm_ruby_string, :local        # use the same ruby as used locally for depl
 before 'deploy', 'rvm:install_rvm'  # install/update RVM
 before 'deploy', 'rvm:install_ruby' # install Ruby and create gemset (both if missing)
 
+# Disabling bundle --deployment when using gemsets
+set :bundle_dir, ''
+set :bundle_flags, '--system --quiet'
+
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 namespace :deploy do
