@@ -12,7 +12,7 @@ server "54.255.153.68", :app, :web, :db, :primary => true #ip of the server
 set :application, "manndi"
 
 set :repository,  "git@bitbucket.org:vedanta/manndi.git"
-set :branch, "master"
+set :branch, "last_stable"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # set :migrate_target,  :current
 # set :ssh_options,     { :forward_agent => true }
