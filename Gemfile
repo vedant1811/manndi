@@ -56,7 +56,7 @@ gem 'spree_gateway', :git => 'http://github.com/spree/spree_gateway.git', :branc
 gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'daemon_controller'
 
-gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-2-stable'
+gem 'spree_fancy', :path => '~/rails/spree_fancy'
 
 group :development do
   gem 'capistrano'
