@@ -54,8 +54,8 @@ GIT
       spree_core (= 2.2.2.beta)
 
 GIT
-  remote: git://github.com/spree/spree_fancy.git
-  revision: 69be98ab52279a38e2d65e657730844c1839b216
+  remote: git://github.com/vedant1811/spree_fancy.git
+  revision: 116e28b6942428b0cdefd50b92dbbd8f8c4c0fb8
   branch: 2-2-stable
   specs:
     spree_fancy (1.3.0)
