@@ -52,7 +52,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
-gem 'spree_gateway', :git => 'http://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
+gem 'spree_gateway', :path => '~/rails/spree_gateway'
 gem 'spree_auth_devise', :git => 'http://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'daemon_controller'
 

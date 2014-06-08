@@ -77,10 +77,8 @@ GIT
       multi_json
       spree_core (~> 2.2.0)
 
-GIT
-  remote: http://github.com/spree/spree_gateway.git
-  revision: ea9dd046848523c79845abbd5462f5e13941276e
-  branch: 2-2-stable
+PATH
+  remote: ~/rails/spree_gateway
   specs:
     spree_gateway (2.2.1)
       spree_core (~> 2.2.0)
